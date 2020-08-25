@@ -1,0 +1,44 @@
+rootProject.name = 'reader'
+include ':react-native-date-picker'
+project(':react-native-date-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-date-picker/android')
+include ':react-native-qq'
+project(':react-native-qq').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-qq/android')
+include ':react-native-svg'
+project(':react-native-svg').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-svg/android')
+include ':react-native-clear-app-cache'
+project(':react-native-clear-app-cache').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-clear-app-cache/android')
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
+include ':@react-native-community_netinfo'
+project(':@react-native-community_netinfo').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/netinfo/android')
+include ':react-native-splash-screen'
+project(':react-native-splash-screen').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-splash-screen/android')
+include ':realm'
+project(':realm').projectDir = new File(rootProject.projectDir, '../node_modules/realm/android')
+include ':jcore-react-native'
+project(':jcore-react-native').projectDir = new File(rootProject.projectDir, '../node_modules/jcore-react-native/android')
+
+include ':jpush-react-native'
+project(':jpush-react-native').projectDir = new File(rootProject.projectDir, '../proj_modules/jpush-react-native/android')
+
+include ':react-native-gesture-handler'
+project(':react-native-gesture-handler').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-gesture-handler/android')
+
+include ':react-native-code-push'
+project(':react-native-code-push').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-code-push/android/app')
+
+include ':react-native-wechat'
+project(':react-native-wechat').projectDir = new File(rootProject.projectDir, '../proj_modules/react-native-wechat/android')
+
+include ':react-native-baas'
+project(':react-native-baas').projectDir = new File(rootProject.projectDir, '../proj_modules/react-native-baas/android')
+
+include ':react-native-webview'
+project(':react-native-webview').projectDir = new File(rootProject.projectDir, '../proj_modules/react-native-webview/android')
+
+include ':react-native-amap-geolocation'
+project(':react-native-amap-geolocation').projectDir = new File(rootProject.projectDir, '../proj_modules/react-native-amap-geolocation/android')
+
+include ':react-native-device-info'
+project(':react-native-device-info').projectDir = new File(rootProject.projectDir, '../proj_modules/react-native-device-info/android')
+include ':app'

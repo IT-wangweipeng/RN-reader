@@ -1,0 +1,22 @@
+{
+  "name": "react-native-auto-scrolling-message",
+  "version": "0.0.2",
+  "description": "Automatically display your message infinitely.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "scrolling-messages",
+    "flowing-messages",
+    "auto-scroll",
+    "message-board"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aihehuo/react-native-auto-scrolling-message.git"
+  },
+  "author": "BranLiang",
+  "license": "ISC"
+}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShareViewController">
+            <connections>
+                <outlet property="bgView" destination="i5M-Pr-FkT" id="3Oy-EW-vcK"/>
+                <outlet property="qqButton" destination="fk0-pr-hss" id="Y2w-dv-6R4"/>
+                <outlet property="qqZoneButton" destination="qml-24-gDM" id="6LU-ZC-1Nm"/>
+                <outlet property="timelineView" destination="i04-qZ-3N6" id="3mG-sX-VN4"/>
+                <outlet property="tipsLable" destination="aqk-Fn-2aF" id="0Wk-O2-fjz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wechatView" destination="6fv-m8-CHM" id="JZC-GC-2WP"/>
+                <outlet property="wrapperView" destination="gFp-ff-FnU" id="N1e-Sk-kX3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gFp-ff-FnU">
+                    <rect key="frame" x="0.0" y="477" width="375" height="190"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqk-Fn-2aF">
+                            <rect key="frame" x="163" y="25" width="49" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.11764705882352941" green="0.14509803921568626" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="dKS-6R-FSx">
+                            <rect key="frame" x="50" y="77.5" width="275" height="72"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6fv-m8-CHM">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="72"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10U-N4-mKf">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="51.5"/>
+                                            <state key="normal" image="image_wechat"/>
+                                            <connections>
+                                                <action selector="shareToWeChatFriend:" destination="-1" eventType="touchUpInside" id="R1M-mJ-rhS"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yLU-u4-jND">
+                                            <rect key="frame" x="0.0" y="57.5" width="50" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.32941176470588235" green="0.36078431372549019" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="72" id="0qs-Lv-1xA"/>
+                                        <constraint firstAttribute="width" constant="50" id="Bad-8z-FVJ"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="i04-qZ-3N6">
+                                    <rect key="frame" x="75" y="0.0" width="50" height="72"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAH-Qz-eeG">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="51.5"/>
+                                            <state key="normal" image="image_wechat_timeline"/>
+                                            <connections>
+                                                <action selector="shareToWeChatTimeline:" destination="-1" eventType="touchUpInside" id="xC2-NP-qL4"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcP-KN-zjO">
+                                            <rect key="frame" x="0.0" y="57.5" width="50" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.32941176470588235" green="0.36078431372549019" blue="0.40392156862745099" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="EDT-Z0-4HT"/>
+                                        <constraint firstAttribute="height" constant="72" id="F2p-VV-XSK"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="EqI-Pp-r15">
+                                    <rect key="frame" x="150" y="0.0" width="50" height="72"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fk0-pr-hss">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="51.5"/>
+                                            <state key="normal" image="image_qq"/>
+                                            <connections>
+                                                <action selector="shareToQQ:" destination="-1" eventType="touchUpInside" id="Itv-dd-Iaf"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bex-Z3-YG4">
+                                            <rect key="frame" x="0.0" y="57.5" width="50" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.3294117647" green="0.36078431370000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="72" id="QVK-4T-nRF"/>
+                                        <constraint firstAttribute="width" constant="50" id="Yhg-6k-Rxg"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="yJh-cr-W1l">
+                                    <rect key="frame" x="225" y="0.0" width="50" height="72"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qml-24-gDM">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="51.5"/>
+                                            <state key="normal" image="image_qzone"/>
+                                            <connections>
+                                                <action selector="shareToQQZone:" destination="-1" eventType="touchUpInside" id="nh9-J1-DWh"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ空间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJH-RW-EcT">
+                                            <rect key="frame" x="0.0" y="57.5" width="50" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.3294117647" green="0.36078431370000003" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="72" id="3Qx-YJ-P5q"/>
+                                        <constraint firstAttribute="width" constant="50" id="goe-AD-FmR"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="aqk-Fn-2aF" firstAttribute="top" secondItem="gFp-ff-FnU" secondAttribute="top" constant="25" id="UDF-6d-ffi"/>
+                        <constraint firstAttribute="height" constant="190" id="prG-pR-FIw"/>
+                        <constraint firstItem="dKS-6R-FSx" firstAttribute="top" secondItem="aqk-Fn-2aF" secondAttribute="bottom" constant="33" id="rfY-x3-jjG"/>
+                        <constraint firstItem="dKS-6R-FSx" firstAttribute="centerX" secondItem="gFp-ff-FnU" secondAttribute="centerX" id="tu0-Mp-9If"/>
+                        <constraint firstItem="aqk-Fn-2aF" firstAttribute="centerX" secondItem="gFp-ff-FnU" secondAttribute="centerX" id="wlq-Hp-DYv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gFp-ff-FnU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cWw-2a-yBp"/>
+                <constraint firstAttribute="bottom" secondItem="gFp-ff-FnU" secondAttribute="bottom" id="hAF-Fl-q8x"/>
+                <constraint firstAttribute="trailing" secondItem="gFp-ff-FnU" secondAttribute="trailing" id="r8E-Ze-P0f"/>
+            </constraints>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_qq" width="51" height="51"/>
+        <image name="image_qzone" width="51" height="51"/>
+        <image name="image_wechat" width="51" height="51"/>
+        <image name="image_wechat_timeline" width="51" height="51"/>
+    </resources>
+</document>

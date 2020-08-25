@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_round_corner_with_blue"
+    android:layout_height="40dp"
+    android:layout_width="180dp"
+    android:maxWidth="180dp"
+    android:minWidth="180dp"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="8dp"
+    android:textColor="#fff"
+    android:textSize="16dp"
+    android:text="@string/ad_ex1_tip"
+    android:gravity="center"/>

@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+
+android {
+  compileSdkVersion 28
+  buildToolsVersion "28.0.2"
+  defaultConfig {
+    minSdkVersion 21
+    targetSdkVersion 27
+    versionCode 1
+    versionName "1.0"
+    ndk {
+      abiFilters "armeabi-v7a", "x86"
+    }
+  }
+}
+
+allprojects {
+  repositories {
+    jcenter()
+    maven { url "$projectDir/../../react-native/android" }
+  }
+}
+
+dependencies {
+  api 'com.facebook.react:react-native:+'
+  api files('libs/libammsdk.jar')
+}

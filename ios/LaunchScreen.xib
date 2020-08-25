@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门小说免费畅读" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jK-HG-ToL">
+                    <rect key="frame" x="86" y="156" width="203" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="1" green="0.3411764705882353" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_image_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqT-mi-Qi5">
+                    <rect key="frame" x="80.5" y="196" width="214" height="240"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="214" id="baM-kP-oR1"/>
+                        <constraint firstAttribute="height" constant="240" id="rZv-yM-b1d"/>
+                    </constraints>
+                </imageView>
+                <imageView clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch_image_02.png" translatesAutoresizingMaskIntoConstraints="NO" id="aKA-d1-LIO">
+                    <rect key="frame" x="109.5" y="594" width="156" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="156" id="NcM-l3-lnm"/>
+                        <constraint firstAttribute="height" constant="48" id="bgl-65-4Go"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="2jK-HG-ToL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="156" id="6TD-bn-yb3"/>
+                <constraint firstItem="aKA-d1-LIO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6kV-e0-qbW"/>
+                <constraint firstAttribute="bottom" secondItem="aKA-d1-LIO" secondAttribute="bottom" constant="25" id="7j1-0v-KGV"/>
+                <constraint firstItem="eqT-mi-Qi5" firstAttribute="top" secondItem="2jK-HG-ToL" secondAttribute="bottom" constant="10" id="Fho-Yf-92i"/>
+                <constraint firstItem="2jK-HG-ToL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ZNp-1G-J8q"/>
+                <constraint firstItem="eqT-mi-Qi5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ftz-RU-oWw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="547.82608695652175" y="454.6875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launch_image_01.png" width="214" height="240"/>
+        <image name="launch_image_02.png" width="158" height="52"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdViewController">
+            <connections>
+                <outlet property="nUserLoginButton" destination="anJ-ha-sAK" id="xdt-h3-Ry5"/>
+                <outlet property="tipsLabel" destination="dru-s4-8Vn" id="JL2-ca-Cm4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="wrapperAdsView" destination="gcr-rT-i8O" id="7wr-3b-hH2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="* 下方广告用于支付正版版权费用" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dru-s4-8Vn">
+                    <rect key="frame" x="20" y="147.5" width="335" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcr-rT-i8O">
+                    <rect key="frame" x="1" y="183.5" width="373" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="oIJ-f6-mij"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anJ-ha-sAK">
+                    <rect key="frame" x="77.5" y="503.5" width="220" height="35"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.098039215686274508" blue="0.035294117647058823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="ZeC-rm-A3p"/>
+                        <constraint firstAttribute="width" constant="220" id="bgH-aj-m5B"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="新用户登录享受3天免广告特权">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <real key="value" value="17.5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="userLoginFromNative:" destination="-1" eventType="touchUpInside" id="41w-7W-NfU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pm-3K-a3H">
+                    <rect key="frame" x="97.5" y="602" width="180" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6rg-kV-h8S"/>
+                        <constraint firstAttribute="width" constant="180" id="NKr-ta-C5h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="看视频免15分钟广告 &gt;">
+                        <color key="titleColor" red="0.4823529411764706" green="0.41568627450980389" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showVideoAction:" destination="-1" eventType="touchUpInside" id="idx-FO-3lN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="2Pm-3K-a3H" secondAttribute="bottom" constant="35" id="3EW-R9-WuR"/>
+                <constraint firstItem="gcr-rT-i8O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="3v8-Wc-ZFB"/>
+                <constraint firstItem="gcr-rT-i8O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="1" id="4jh-WL-4g9"/>
+                <constraint firstItem="gcr-rT-i8O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5MI-X9-4QK"/>
+                <constraint firstItem="2Pm-3K-a3H" firstAttribute="centerX" secondItem="anJ-ha-sAK" secondAttribute="centerX" id="BEO-Kx-5bs"/>
+                <constraint firstAttribute="trailing" secondItem="dru-s4-8Vn" secondAttribute="trailing" constant="20" id="DlV-YO-X3p"/>
+                <constraint firstItem="gcr-rT-i8O" firstAttribute="top" secondItem="dru-s4-8Vn" secondAttribute="bottom" constant="20" id="Kgu-OV-ThB"/>
+                <constraint firstItem="dru-s4-8Vn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Q2I-8L-jBs"/>
+                <constraint firstItem="anJ-ha-sAK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="cpp-tp-sgS"/>
+                <constraint firstAttribute="trailing" secondItem="gcr-rT-i8O" secondAttribute="trailing" constant="1" id="dt6-jc-KL9"/>
+                <constraint firstItem="anJ-ha-sAK" firstAttribute="top" secondItem="gcr-rT-i8O" secondAttribute="bottom" constant="20" id="l9Y-fN-3eb"/>
+            </constraints>
+            <point key="canvasLocation" x="-162.40000000000001" y="-111.0944527736132"/>
+        </view>
+    </objects>
+</document>

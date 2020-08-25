@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="188dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="75dp"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/ic_guide_music_bg" >
+
+        <TextView
+            android:layout_marginTop="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/guide_music_text"
+            android:textColor="#1E252F"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/btn"
+            android:layout_marginTop="14dp"
+            android:layout_width="98dp"
+            android:layout_height="28dp"
+            android:background="@drawable/shape_view_guide_music_btn"
+            android:textColor="@color/nb.read.menu.text"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:text="@string/guide_music_btn"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

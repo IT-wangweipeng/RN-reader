@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_corner_dailog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="21dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#1E252F"
+        android:text="@string/dialog_add_bookshelf_title" />
+
+    <TextView
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="24dp"
+        android:textSize="15dp"
+        android:textColor="#1E252F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_add_bookshelf_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/shape_round_corner_dailog_bottom"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#747f8e"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_add_bookshelf_cancel"/>
+        <TextView
+            android:id="@+id/ok"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:textColor="#F85836"
+            android:layout_height="match_parent"
+            android:text="@string/dialog_add_bookshelf_ok"/>
+    </LinearLayout>
+</LinearLayout>

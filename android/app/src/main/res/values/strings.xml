@@ -1,0 +1,110 @@
+<resources>
+	<string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">deployment-key-here</string>
+    <string name="app_name">热料小说</string>
+
+    <!--read-->
+    <string name="nb.read.category">目录</string>
+    <string name="nb.read.no_chapter">第 %1$d 章(%2$d)</string>
+    <string name="nb.read.chapter_prev">上一章</string>
+    <string name="nb.read.chapter_next">下一章</string>
+    <string name="nb.read.brightness">亮度</string>
+    <string name="nb.read.fontsize">字号</string>
+    <string name="nb.read.background">背景</string>
+    <string name="nb.read.order">正序</string>
+    <string name="nb.read.deorder">倒序</string>
+
+    <string name="nb.read.chapter_number">共%1$d章</string>
+    <string name="brightness_follow_system">跟随系统</string>
+
+
+    <!-- guide -->
+    <string name="nb.read.guide_prev">上一页</string>
+    <string name="nb.read.guide_next">下一页</string>
+    <string name="nb.read.guide_title1">点击中间</string>
+    <string name="nb.read.guide_title2">呼出菜单</string>
+
+    <!-- ad -->
+    <string name="download_msg">正在下载，请稍后...</string>\
+    <string name="download_title">下载</string>
+    <string name="toast_apk_msg">请检查是否安装应用</string>
+    <string name="ad_ex1_tip">看视频免15分钟广告</string>
+    <string name="ad_ex2_tip">规则说明?</string>
+    <string name="ad_ex3_tip">看视频免15分钟广告></string>
+    <string name="ad_head_tip1">听书，免广告，音量键翻页，9毛9开会员</string>
+    <string name="ad_head_tip2">立即开通</string>
+    <string name="ad_rule_title">规则说明</string>
+    <string name="ad_rule_content1">完成观看视频</string>
+    <string name="ad_rule_content2">可免广告15分钟</string>
+    <string name="ad_rule_button">知道了</string>
+    <string name="ad_remove_content">恭喜你，成功移除了15分钟广告~</string>
+    <string name="has_add_to_bookshelf">已添加至书架</string>
+    <string name="tip_first_page">当前是第一页</string>
+    <string name="tip_last_page">当前是最后一页</string>
+    <string name="ad_tip">*下方广告用于支付正版版权费用</string>
+    <string name="ad_login_tip">新用户登录享受3天免广告特权</string>
+
+    <string name="startup_content">热门小说免费畅读</string>
+    <string name="share_to">分享到</string>
+    <string name="share_to_wx_friend">微信好友</string>
+    <string name="share_to_wx_friend_circle">朋友圈</string>
+    <string name="share_to_qq_friend">QQ好友</string>
+    <string name="share_to_qq_zone">QQ空间</string>
+
+    <string name="dialog_add_bookshelf_title">加入书架</string>
+    <string name="dialog_add_bookshelf_content">下次阅读时，可直接在书架中找到哦</string>
+    <string name="dialog_add_bookshelf_cancel">取消</string>
+    <string name="dialog_add_bookshelf_ok">加入</string>
+    <string name="tip_net_error">网络错误，请检查网络后重试</string>
+    <string name="no_net_message">书籍信息获取失败</string>
+    <string name="back">返回</string>
+    <string name="retry">点击重试</string>
+    <string name="notificatino_title">请打开通知权限</string>
+    <string name="cancel">取消</string>
+    <string name="settings">设置</string>
+
+    <!-- update -->
+    <string name="android_auto_update_dialog_title">发现新版本</string>
+    <string name="android_auto_update_notify_ticker">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_notify_content">发现新版本,点击进行升级</string>
+    <string name="android_auto_update_dialog_btn_download">立即下载</string>
+    <string name="android_auto_update_dialog_btn_cancel">以后再说</string>
+    <string name="android_auto_update_toast_no_new_update">已经是最新版本</string>
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+    <string name="android_auto_update_dialog_checking">正在检查版本</string>
+
+    <!-- check update dialog -->
+    <string name="update_dialog_main_title">发现新版本</string>
+    <string name="update_dialog_sub_title">Hi，用户爸爸们注意了，请火速更新此版本！</string>
+
+    <string name="tip_no_ad">广告都看完啦，过会再来吧</string>
+    <string name="add_bookshelf">加入书架</string>
+    <string name="share">分享</string>
+
+    <string name="today_sign_get_hotbean">今日签到奖励%d热豆</string>
+    <string name="share_get_hotbean">已成功领取%d热豆</string>
+    <string name="weixin_not_install">请先安装微信!</string>
+    <string name="qq_not_install">请先安装QQ!</string>
+    <string name="current_is_lastest_version">当前已是最新版本!</string>
+
+    <string name="music_network_choice_text">允许使用无线数据播放背景音乐</string>
+    <string name="music_network_choice_btn_cancel">仅wifi</string>
+    <string name="music_network_choice_btn_ok">wifi及无线数据</string>
+    <string name="guide_music_text">单击进入音乐面板</string>
+    <string name="guide_music_btn">我知道啦</string>
+    <string name="music_change_one">换一首</string>
+    <string name="music_change_all">换一批</string>
+    <string name="music_order_play">顺序播放</string>
+    <string name="music_single_loop">单曲循环</string>
+
+    <string name="vip_step_1">登录后，开通VIP免广告</string>
+    <string name="vip_step_2">开通VIP,免广告</string>
+    <string name="toast_no_reward_ad">暂无广告，请稍后再试</string>
+    <string name="privacy_exit">不同意，退出App</string>
+    <string name="privacy_agree">同意，继续使用</string>
+    <string name="users_note">个人信息保护指引</string>
+    <string name="privacy_tips_key1">[用户协议]</string>
+    <string name="privacy_tips_key2">[隐私政策]</string>
+    <string name="privacy_tips">为了加强对您个人信息的保护，请仔细阅读并确认[用户协议]和[隐私政策]。我们将严格按照政策内容使用和保护您的个人信息，为您提供更好的服务，感谢您的信任。</string>
+    <string name="opt_terms">用户协议</string>
+    <string name="opt_privacy">隐私政策</string>
+</resources>

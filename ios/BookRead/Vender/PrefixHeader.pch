@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  reader
+//
+//  Created by Apple on 2019/5/30.
+//  Copyright © 2019 Facebook. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "ReaderHeader.h"
+
+#endif /* PrefixHeader_pch */

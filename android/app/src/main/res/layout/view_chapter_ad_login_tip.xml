@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_login"
+    android:layout_height="35dp"
+    android:layout_width="220dp"
+    android:maxWidth="220dp"
+    android:minWidth="220dp"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="8dp"
+    android:textColor="#fff"
+    android:textSize="14dp"
+    android:text="@string/ad_login_tip"
+    android:gravity="center"/>

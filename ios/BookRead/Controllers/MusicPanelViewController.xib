@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MusicPanelViewController">
+            <connections>
+                <outlet property="bottomView" destination="h2G-Qp-G9T" id="2ze-zK-P8p"/>
+                <outlet property="orderPlayButton" destination="cHB-tG-l5O" id="mFa-0R-ew6"/>
+                <outlet property="playMusicButton" destination="dc6-Hv-ux5" id="uZ5-hR-l9m"/>
+                <outlet property="refreshButton" destination="xJ6-fH-KQT" id="bpz-Bn-kcu"/>
+                <outlet property="tableView" destination="i7Z-oI-gpX" id="TQR-sl-5Jn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="i7Z-oI-gpX">
+                    <rect key="frame" x="0.0" y="395" width="375" height="188"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="188" id="gdE-Vm-HdI"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="7Lp-4D-1vB"/>
+                        <outlet property="delegate" destination="-1" id="TJr-j4-3q1"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h2G-Qp-G9T">
+                    <rect key="frame" x="0.0" y="583" width="375" height="84"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc6-Hv-ux5">
+                            <rect key="frame" x="167.5" y="22" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="14O-iH-yxP"/>
+                                <constraint firstAttribute="height" constant="40" id="EQi-BI-lv9"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="image_play_music"/>
+                            <connections>
+                                <action selector="playMusicAction:" destination="-1" eventType="touchUpInside" id="Lxs-eF-oVD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ6-fH-KQT">
+                            <rect key="frame" x="276" y="22" width="94" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="2ZU-u6-o4Y"/>
+                                <constraint firstAttribute="width" constant="94" id="BqB-eo-ERc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="换一批" image="image_refresh_highlight">
+                                <color key="titleColor" red="0.11764705882352941" green="0.14509803921568626" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="refreshAction:" destination="-1" eventType="touchUpInside" id="1Mp-Az-GdT"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHB-tG-l5O">
+                            <rect key="frame" x="10" y="22" width="94" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="hck-1e-lxv"/>
+                                <constraint firstAttribute="width" constant="94" id="qEI-tN-uON"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="顺序播放" image="image_order_play">
+                                <color key="titleColor" red="0.11764705882352941" green="0.14509803921568626" blue="0.18431372549019609" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="playSettingAction:" destination="-1" eventType="touchUpInside" id="bzc-z9-xCs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99215686274509807" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="cHB-tG-l5O" firstAttribute="leading" secondItem="h2G-Qp-G9T" secondAttribute="leading" constant="10" id="67E-eU-knh"/>
+                        <constraint firstItem="dc6-Hv-ux5" firstAttribute="centerX" secondItem="h2G-Qp-G9T" secondAttribute="centerX" id="Jcd-f5-l7B"/>
+                        <constraint firstItem="dc6-Hv-ux5" firstAttribute="centerY" secondItem="h2G-Qp-G9T" secondAttribute="centerY" id="QUT-Ox-stQ"/>
+                        <constraint firstItem="xJ6-fH-KQT" firstAttribute="centerY" secondItem="h2G-Qp-G9T" secondAttribute="centerY" id="WlB-yX-Mja"/>
+                        <constraint firstItem="cHB-tG-l5O" firstAttribute="centerY" secondItem="h2G-Qp-G9T" secondAttribute="centerY" id="cSa-e2-fsW"/>
+                        <constraint firstAttribute="height" constant="84" id="gd7-TP-rXF"/>
+                        <constraint firstAttribute="trailing" secondItem="xJ6-fH-KQT" secondAttribute="trailing" constant="5" id="vwi-Gc-4wC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="h2G-Qp-G9T" secondAttribute="bottom" id="NTT-pT-6sd"/>
+                <constraint firstItem="i7Z-oI-gpX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="X9d-RP-tgr"/>
+                <constraint firstAttribute="trailing" secondItem="h2G-Qp-G9T" secondAttribute="trailing" id="gP2-MR-15F"/>
+                <constraint firstItem="h2G-Qp-G9T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qPd-ai-2Eg"/>
+                <constraint firstItem="h2G-Qp-G9T" firstAttribute="top" secondItem="i7Z-oI-gpX" secondAttribute="bottom" id="uDH-Zf-hm1"/>
+                <constraint firstAttribute="trailing" secondItem="i7Z-oI-gpX" secondAttribute="trailing" id="x8f-6N-cL7"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="image_order_play" width="14.5" height="14"/>
+        <image name="image_play_music" width="41.5" height="41"/>
+        <image name="image_refresh_highlight" width="16" height="15"/>
+    </resources>
+</document>

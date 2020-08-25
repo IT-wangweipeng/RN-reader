@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/tv_native_ad_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:maxWidth="200dp"
+        android:text="这招太狠了,白开水加它，廋的不敢相信"
+        android:textColor="#545C67"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/iv_native_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_native_ad_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#191D21"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:maxWidth="200dp"
+            android:layout_marginEnd="10dp"
+            android:text="会飞的鱼" />
+
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/btn_native_creative"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/shape_round_corner_with_red"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="6dp"
+            android:text="查看详情"
+            android:textSize="12dp"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+</LinearLayout>
